@@ -33,7 +33,19 @@ top: 60px;
     width: 300px;
     float: left;
     position: relative;
-    top: 60px;
-    
-    
+    top: 60px;   
+}
+
+.add {
+    background-color: pink;
+    margin:auto;
+    width: 400px;
+    height: 300px;
+    text-align: right;
+    font-size: 20px;
+}
+
+.amounts-container {
+    background-color: darkcyan;
+    width: 800px
 }
