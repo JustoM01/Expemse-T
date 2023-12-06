@@ -1,10 +1,32 @@
 .header {
-    color: darkgray;
+    color: #22223b;
     text-align: center;
 }
 
 .balance {
     margin: 0 auto;
+    text-align: center;
     width: 300px;
     height: 300px;
+    color: #c9ada7;
+}
+
+
+.income {
+    display: flex;
+    margin-top: -200px;
+    width: 300px;
+    height: 300px;
+    color: #9a8c98;
+}
+
+
+.expense {
+    display: inline;
+    margin-top: -200px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    float: right;
+    color: #9a8c98;
 }
