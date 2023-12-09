@@ -38,14 +38,25 @@ top: 60px;
 
 .add {
     background-color: pink;
-    margin:auto;
-    width: 400px;
+    margin: 100px;
+    width: 500px;
     height: 300px;
-    text-align: right;
+    text-align: left;
     font-size: 20px;
 }
 
+
 .amounts-container {
-    background-color: darkcyan;
-    width: 800px
+    background-color: darkolivegreen;
+    width: 1000px
+    
+}
+
+.transactions {
+    text-align: right;
+    margin: 600px;
+    width: 600px;
+    height: 300px;
+    margin-top: -245px;
+    background-color: darkkhaki;
 }
