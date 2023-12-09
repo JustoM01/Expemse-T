@@ -36,27 +36,25 @@ top: 60px;
     top: 60px;   
 }
 
-.add {
-    background-color: pink;
-    margin: 100px;
-    width: 500px;
-    height: 300px;
-    text-align: left;
-    font-size: 20px;
+.amounts{
+    background-color: blue;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 5px;
 }
 
-
-.amounts-container {
-    background-color: darkolivegreen;
-    width: 1000px
-    
+.transactions, .add-new{
+    background-color: brown;
+    width:50%;
+    height: 70%;
+    margin-top: 5%;
 }
 
-.transactions {
-    text-align: right;
-    margin: 600px;
-    width: 600px;
-    height: 300px;
-    margin-top: -245px;
-    background-color: darkkhaki;
+.transactions{
+    float: right;
+}
+
+.add-new{
+    float: left;
 }
