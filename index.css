@@ -58,3 +58,8 @@ top: 60px;
 .add-new{
     float: left;
 }
+
+.submit {
+    margin-left: 15%;
+    background-color: #9a8c98;
+}
