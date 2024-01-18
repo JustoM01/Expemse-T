@@ -21,6 +21,7 @@ Expenses.init(
       references: {
         model: User,
         key: 'id', 
+        onDelete: 'CASCADE', // Move onDelete option here
       },
     },
   },

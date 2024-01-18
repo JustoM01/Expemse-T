@@ -2,7 +2,7 @@
 INSERT INTO users (username, password, email) VALUES
   ('user123', 'hashed_password_here', 'user123@example.com'),
   ('anotherUser', 'hashed_password_here', 'anotheruser@example.com'),
-    ('Topo', 'hashed_password_here', 'anotheruser@example.com'),
+    ('Topo', 'hashed_password_here', 'topo@gamil.com'),
   
 
 
