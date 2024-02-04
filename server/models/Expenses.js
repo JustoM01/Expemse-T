@@ -16,6 +16,14 @@ Expenses.init(
       type: DataTypes.INTEGER,
       allowNull: false,
     },
+
+    category:{
+      type:DataTypes.STRING
+    },
+
+    date:{
+      type:DataTypes.DATE
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {

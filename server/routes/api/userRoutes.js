@@ -17,6 +17,47 @@ router.post('/', async (req,res)=>{
 })
 
 
+
+router.post('/login', async (req, res) => {
+    try {
+        const { username, password } = req.body;
+
+        // Find the user by username
+        const user = await User.findOne({ where: { username } });
+
+        // If the user doesn't exist, return an error
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        // Compare the provided password with the stored password
+        if (user.password !== password) {
+            return res.status(400).json({ message: 'Invalid password' });
+        }
+
+        // If the username and password are valid, user is logged in
+        return res.json({ message: 'Login successful', user });
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // route for retrieving all users using sequelize and my User model
 router.get('/', async (req,res)=>{
     try{
