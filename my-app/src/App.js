@@ -4,6 +4,7 @@ import User from './components/User';
 import './pages/Login'
 // import User from './components/User';
 import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
 {/* <User/> */}
 <Login/>
 <User/>
+<Signup/>
     </div>
   );
 }
