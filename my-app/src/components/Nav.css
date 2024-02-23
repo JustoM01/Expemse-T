@@ -3,7 +3,7 @@
     display: inline-block;
     width: 17px;
     height: 17px;
-    background-image: url('/Users/nmenchaca/Downloads/home_FILL0_wght400_GRAD0_opsz24%20(1).svg');
+    background-image: url('./home.png');
     background-size: contain;
     margin-right: 5px;
     vertical-align: middle;
@@ -14,7 +14,7 @@
         display: inline-block;
         width: 17px;
         height: 17px;
-        background-image: url('/Users/nmenchaca/Downloads/passkey_FILL0_wght400_GRAD0_opsz24.svg');
+        background-image: url('./login.png');
         background-size: contain;
         margin-right: 5px;
         vertical-align: middle;
@@ -27,7 +27,7 @@
     display: inline-block;
     width: 17px;
     height: 17px;
-    background-image: url('/Users/nmenchaca/Downloads/edit_note_FILL0_wght400_GRAD0_opsz24.svg');
+    background-image: url('./signup.png');
     background-size: contain;
     margin-right: 5px;
     vertical-align: middle;
