@@ -14,9 +14,7 @@ const Signup = () => {
         
     </h1>
 
-    <span class="material-symbols-outlined">
-settings_accessibility
-</span>
+
  <div className='form'>
  <Form>   
     <Form.Group className="input" controlId="exampleForm.ControlTextarea1">

@@ -1,18 +1,22 @@
-
 import './App.css';
-import User from './components/User';
-import './pages/Login'
-// import User from './components/User';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Nav from './components/Nav';
+
 
 function App() {
   return (
-    <div className="App">
-{/* <User/> */}
-<Login/>
-<User/>
-<Signup/>
+    <div className="App"> 
+      <Router>
+        <Nav>
+
+        </Nav>
+        <Routes>
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

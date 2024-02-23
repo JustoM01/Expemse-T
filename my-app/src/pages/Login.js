@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './Login.css';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 const Login = () => {
   const [username, setUsername] = useState('');
@@ -25,16 +28,20 @@ const Login = () => {
 
   return (
     <div>
-      <h2>Login</h2>
-      <div>
-        <label>Username:</label>
-        <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
+      <h1>Login</h1>
+      <div className="form-wrapper"> {/* Add a wrapper around the form groups */}
+        <Form className='form'>
+          <Form.Group controlId="formGroupEmail">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control type="email" placeholder="Enter email" />
+          </Form.Group>
+          <Form.Group controlId="formGroupPassword">
+            <Form.Label>Password</Form.Label>
+            <Form.Control type="password" placeholder="Password" />
+            <Button className='button' variant="dark">Dark</Button>
+          </Form.Group>
+        </Form>
       </div>
-      <div>
-        <label>Password:</label>
-        <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-      </div>
-      <button onClick={handleLogin}>Login</button>
     </div>
   );
 };
