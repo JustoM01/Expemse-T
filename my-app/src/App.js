@@ -1,19 +1,20 @@
 import './App.css';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-import Home from './pages/Display';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Display from './pages/Display';
+import Nav from './components/Nav';
 
 
 function App() {
   return (
     <div className="App"> 
       <Router>
+        <Nav>
+
+        </Nav>
         <Routes>
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/display" element={<Display/>} />
         </Routes>
       </Router>
     </div>
